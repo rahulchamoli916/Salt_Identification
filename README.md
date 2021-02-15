@@ -25,14 +25,17 @@ The given dataset is fairly small, it just contain 4000 seismic images.
 Since it is a Image Segmentation problem. So for that IoU (Intersection over Union) would be the perfect one. And Kaggle also mentioned to measure performance of the model in terms of IoU.
 
 IoU can be mathematically represented as - 
-# image
+
+![](Images/Capture120.PNG)
 
 ### Model 
 
 For this task I picked U-net model, which works very well with the image segmentation tasks. The architecture of the U-net architecture is below - 
-# image
+
+![](Images/Capture121.PNG)
 
 ### Things I've used
+- Plateform - Google Colab
 - Framework - PyTorch
 - Augmentation - grayscale using TorchVision
 - Optimizer - Adam with default parameters
@@ -42,13 +45,17 @@ For this task I picked U-net model, which works very well with the image segment
 ### Results
 
 The below plot is used to represent the **Epoch vs. IOU** and **Epoch vs. loss**.
-# image
+
+![](Images/Capture123.PNG)
+
 In the below images we can see a simple U-net model can work really well for the image segmentation tasks.
-# image
+
+![](Images/Capture124.PNG)
+![](Images/Capture125.PNG)
 
 ### Kaggle Submission Score
-- Public Leaderboard - 
-- Private Leaderboard -
+- Public Leaderboard - 0.76699
+- Private Leaderboard - 0.78776
 
 ### Future Work
 
