@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<HEAD>
+	<TITLE>
+		Salt Detection
+	</TITLE>
+	<STYLE>
+		.column {
+        float: left;
+        width: 25%;
+        padding: 20px;
+        margin-left: 18%;
+        }
+
+	    .row::after {
+	        content: "";
+	        clear: both;
+	        display: table;
+	</STYLE>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</HEAD>
+<BODY style="background-color:black">
+	<CENTER>
+		<H1 style="color:white">Salt Detection from a Seismic Image</H1>
+	</CENTER>
+	<FORM method="post" enctype="multipart/form-data">
+		<CENTER>
+			<H5 style='color: white'>Pick an Image to Detect Salt Presence</H5>
+		</CENTER>
+		<CENTER>
+			<INPUT type="file" name="image" style="color:white;" accept=".png, .jpg, .jpeg" required>
+		</CENTER>
+		<br/>
+		<CENTER>
+			<BUTTON class="button" type="submit">
+				<B>Detect</B>
+			</BUTTON>
+		</CENTER>
+		{% if uploaded_image %}
+			<CENTER>
+				<P style='color: white'>In Detected Mask Image, the yellowish patch is used to represent salt. If no yellow patch, then salt not detected or not present.</P>
+			</CENTER>
+			<CENTER>
+			    <DIV class="row">
+			        <DIV class="column">
+				        <H3 style="color: white"> Uploaded Image</H3>
+				        <img src="static/uploaded/{{uploaded_image}}" height="200" width="200">
+			        </DIV>
+			        <DIV class="column">
+				        <H3 style="color: white" > Detected Mask Image</H3>
+				        <img src="static/predicted/{{predicted_image}}" height="200" width="200">
+			        </DIV>
+			    </DIV>
+		    </CENTER>
+	    {%endif%}
+	    <CENTER>
+	    	<P style='color: white'>To download more images, head over to <a href="https://www.kaggle.com/c/tgs-salt-identification-challenge/data">this</a> link. And download compition_data.zip file, extract it and get the images.</P>
+	    </CENTER>
+	</FORM>
+</BODY>
+
+</HTML>
