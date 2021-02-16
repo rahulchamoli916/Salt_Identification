@@ -86,7 +86,4 @@ def upload():
 
 if __name__ == '__main__':
     
-    app.run()
-
-
-# pip3 install torch==1.7.0+cpu torchvision==0.7.0+cpu -f https://download.pytorch.org/whl/torch_stable.html
+    app.run(host=’0.0.0.0', port=5000, debug=True)
