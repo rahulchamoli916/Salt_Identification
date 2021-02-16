@@ -72,4 +72,4 @@ The model is working well but still not so good. Needs further improvement. So t
 
 **Link to the web app (AWS)-** http://ec2-15-207-221-240.ap-south-1.compute.amazonaws.com:8080/
 
-**Link to the web app (GCP)-** 34.74.155.95:5000
+**Link to the web app (GCP)-** http://34.74.155.95:5000/
