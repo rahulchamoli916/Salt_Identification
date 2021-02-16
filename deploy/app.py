@@ -11,7 +11,7 @@ from flask import Flask, flash, redirect, url_for, request, render_template
 from werkzeug.utils import secure_filename
 
 # trained model weights
-model_path = 'unet_model.pth'
+model_path = 'unet_model_final.pth'
 
 # Uploaded image folder path
 file_uploader = 'static/uploaded'
