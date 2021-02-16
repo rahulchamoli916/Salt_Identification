@@ -68,6 +68,8 @@ The model is working well but still not so good. Needs further improvement. So t
 
 - Frontend - HTML
 - Backend - Flask, Python
-- Deploying Plateform - AWS EC2
+- Deploying Plateform - AWS EC2, GCP Compute Engine
 
-**Link to the web app -** http://ec2-15-207-221-240.ap-south-1.compute.amazonaws.com:8080/
+**Link to the web app (AWS)-** http://ec2-15-207-221-240.ap-south-1.compute.amazonaws.com:8080/
+
+**Link to the web app (GCP)-** 34.74.155.95:5000
