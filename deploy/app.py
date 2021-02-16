@@ -85,5 +85,7 @@ def upload():
     return render_template('index.html', uploaded_image=None, predicted_image=None)
 
 if __name__ == '__main__':
-    
+    # for cloud deployment only
     app.run(host=’0.0.0.0', port=5000, debug=True)
+    # for local system deployment
+    # app.run()
